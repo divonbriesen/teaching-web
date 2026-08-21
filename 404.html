@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moved to /teaching/</title>
+    <script>
+      // GitHub serves this file for every unmatched path under the old site,
+      // which makes it the only place a deep link can be rescued: carry the
+      // rest of the path over rather than dropping everyone on the home page.
+      (function () {
+        var p = location.pathname.replace(/^\/teaching-web(\/|$)/, "/teaching/");
+        if (p === location.pathname) p = "/teaching/";
+        location.replace(location.origin + p + location.search + location.hash);
+      })();
+    </script>
+    <meta http-equiv="refresh" content="1; url=https://divonbriesen.github.io/teaching/" />
+  </head>
+  <body>
+    <p>
+      This site moved to
+      <a href="https://divonbriesen.github.io/teaching/">divonbriesen.github.io/teaching/</a>.
+      Taking you to the same page there.
+    </p>
+  </body>
+</html>
